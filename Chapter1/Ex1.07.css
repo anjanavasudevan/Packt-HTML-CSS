@@ -1,0 +1,23 @@
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: block;
+    padding: 16px;
+}
+/*Styling the odd no. items*/
+li:nth-child(odd){
+    background-color: deepskyblue;
+    color: white;
+    font-weight: bold;
+}
+/*Styling the li element with selected class*/
+li.selected{
+    background-color: hotpink;
+}
+/*Styling odd li elements after selected element*/
+li.selected~li:nth-child(odd){
+    background-color: orange;
+}
